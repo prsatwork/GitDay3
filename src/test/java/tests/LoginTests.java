@@ -12,7 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-
+// login tests are maintained here.
+// without Page object approach
 public class LoginTests {
 
     WebDriver driver;
@@ -42,6 +43,7 @@ public class LoginTests {
         driver.findElement(By.id("ctl00_logout")).click();
         Assert.assertEquals(driver.getTitle(), "Web Orders Login");
     }
+
 
     @Test
     public void negativeloginTest() {
