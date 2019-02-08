@@ -13,6 +13,11 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+
+
+// login tests are maintained here.
+// without Page object approach
+
 public class LoginTests {
 
     WebDriver driver;
@@ -38,6 +43,9 @@ public class LoginTests {
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
         driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test" + Keys.ENTER);
+
+        //Assert.assertEquals(driver.getTitle(), "Web Orders");
+
         driver.findElement(By.id("ctl00_logout")).click();
         Assert.assertEquals(driver.getTitle(), "Web Orders Login");
     }
