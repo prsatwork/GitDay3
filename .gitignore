@@ -1,9 +1,5 @@
 .idea/
-
-GitDay3
-=======
 GitDay3.iml
-
 target/
 
 # Eclipse
@@ -21,8 +17,7 @@ target/
 
 # Maven
 log/
-
 target/
 
-target/
-
+#some new changes
+someFolder/
